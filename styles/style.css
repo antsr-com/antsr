@@ -1,0 +1,181 @@
+/* CSS Document 
+Antsr Colors:
+
+Red: #ee503b;
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, /*sub, sup,*/ tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+		font-family:Arial, Helvetica, sans-serif;
+}
+
+body, html {
+		margin:0;
+}
+
+html { background: url('../images/backgrounds/headerBg.png') no-repeat center 0; }
+body.frontend { text-align:center; height:100%; background: url('../images/backgrounds/bodyBg.jpg') repeat-x 0 140px; }
+body.editModus { background-position: 0 /*170px;*/ 246px; }
+
+/* ------------------------------------------------------------------------------------ General Styles */
+
+h3 { font-size: 100%;  color: #ee503b; }
+
+p { padding: 10px 0; line-height: 130%; color: #37321a; }
+
+input, textarea { font-family: Arial, Helvetica, sans-serif; padding: 2px; font-size:100%; }
+
+/* clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+	
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+ul, ol { margin: 0 0 0 15px; }
+
+.left {float:left;}
+.right {float:right;}
+.block {display:block;}
+.rightTxt {text-align:right;}
+.notVisible { display:none; }
+
+/* ------------------------------------------------------------------------------------ General Styles */
+
+.container {
+	text-align:left;
+	margin: 50px auto;
+	width: 850px;
+	/*height: 245px;
+	border: solid 1px #ee503b;*/
+	}
+	
+/* ------------------------------------------------------------------------------------ Header Styles */
+
+
+/* ------------------------------------------------------------------------------------ center Styles */
+
+.column40 { width:40%; }
+.column40 div {padding: 20px 0;}
+.column40 p, .column40 li { font-size:12px; color: #ee503b; line-height:1.4em; }
+.column40 ul { list-style-type:square; }
+.column40 p { text-transform:uppercase; }
+
+/* ------------------------------------------------------------------------------------ leftColumn Styles */
+
+.leftColumn { width: 80%; }
+.leftColumn div { padding: 20px 0; }
+
+.leftColumn h1 { background: url('../images/logo.png') no-repeat 0 0; width:433px; height:238px; }
+.leftColumn h1 span { display:none; }
+
+/* ------------------------------------------------------------------------------------ Content Styles */
+
+.content { width: 20%; }
+.content div { padding: 0 15px 0 0; }
+.content p {color: #ee503b; font-size:12px; line-height:1.4em;  }
+.content a { color: #ee503b; text-decoration: underline; }
+.content a:hover { text-decoration: none; }
+.content a.bold { font-weight:bold; text-decoration: none; }
+.content a.bold:hover { text-decoration: underline; }
+
+/* ------------------------------------------------------------------------------------ rightColumn Styles */
+
+.rightColumn { width:20%; height:100%; background: #ee503b;  }
+.rightColumn div { padding: 180px 0 0 15px; }
+.rightColumn p {color: white; font-size:11px; line-height:1.4em; }
+.rightColumn a { color: white; text-decoration: underline; }
+.rightColumn a:hover { text-decoration: none; }
+
+.download {background:none; }
+.download div {padding: 10px 10px 0 15px;}
+.download div img { padding: 0 0 5px 0; }
+.download p {color: #ee503b; font-size:12px;}
+.download a {color: #ee503b;}
+
+/* ---------------------------------------------------- Cluetip styles  */
+
+.cluetip-rounded {
+  font-family: Arial, Helvetica, sans-serif; 
+  background: transparent url('../images/bl.gif') no-repeat 0 100%;
+  margin: 0;
+  color: #ee503b;
+  text-align:left;
+  font-size:11px;
+}
+
+.cluetip-rounded #cluetip-outer {
+  background: transparent url('../images/tl.gif') no-repeat 0 0;
+  margin-top: -12px;
+}
+
+.cluetip-rounded #cluetip-title {
+  padding: 8px 8px 0;
+  margin: 0 -12px 0 0;
+  font-size: 11px;
+}
+.cluetip-rounded #cluetip-extra {
+  position: absolute;
+  display: block;
+  background: transparent url('../images/tr.gif') no-repeat 100% 0;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 30px;
+  margin: -12px -12px 0 0;
+}
+.cluetip-rounded #cluetip-inner {
+  background: url('../images/br.gif') no-repeat 100% 100%;
+  padding: 5px 8px 8px;
+  margin: 0 -12px 0 0;
+  position: relative;
+  font-size: 11px;
+  line-height: 1.4em;
+}
+
+.cluetip-rounded div#cluetip-close { 
+  text-align: right;
+  margin: 0 5px 5px;
+  color: #009;
+  background: transparent;
+}
+.cluetip-rounded div#cluetip-close a {
+  color: #777;
+}
+
+/* stupid IE6 HasLayout hack */
+.cluetip-rounded #cluetip-title,
+.cluetip-rounded #cluetip-inner {
+  zoom: 1;
+}
+
